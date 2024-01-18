@@ -6,7 +6,7 @@
             background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("https://i.pinimg.com/originals/f7/b6/d6/f7b6d62ba1e791818cfea1ae411de792.jpg");
             background-color: black;
             background-size: cover;
-            font-family: 'OCR A Std';
+            font-family: 'Courier New';
             }
             h1, h2, h3, h4, p, label, th, td{
                 color: white;
@@ -21,19 +21,31 @@
                 margin-left: 10px;
             }
             footer{
-                position: absolute;
+                position: relative;
                 left: 0;
                 bottom: 0;
                 width: 100%;
                 background-color: #2f2c36;
                 text-align: center;
+                float: inline-end;
+            }
+            section{
+                width: 80%;
+                float: left;
+            }
+            article{
+                width: 80%;
+                float: left;
             }
             aside {
+                position: absolute;
                 width: 20%;
+                height: 100%;
+                right: 0;
+                background-color: #ede9f8;
                 padding-left: 15px;
                 margin-left: 15px;
-                float: right;
-                background-color: #ede9f8;
+
             }
             table, th, td {
                 border: 1px solid white;
@@ -46,12 +58,14 @@
             <h1> Albebo</h1>
         </header>
         <section>
-            <video width="700" height="394" controls>
-                <source src="file:///C:/portapps/vscode-portable/224132191-WebApp/testvid.mp4" type="video/mp4"> 
+            <h1>Welcome to the Amazing Digital Circus</h1>
+            <p>Social media for digital people!</p><br>
+            <video width="600" height="320" controls>
+                <source src="testvid.mp4" type="video/mp4"> <br>
             </video>
         </section>
-        <section>
-            <t3>Success Stories</t3>
+        <article>
+            <h3>Success Stories</h3>
             <table>
                 <tr>
                     <th>Name</th>
@@ -68,11 +82,14 @@
                     <th>Wilkins Distillery</th>
                     <th>Fontaine</th>
                 </tr>
-            </table>
-        </section>
+            </table><br><br><br>
+            <audio controls autoplay>
+                <source src="french.mp3" type="audio/mp3">
+            </audio>
+        </article>
         <aside>
-            <img src="https://i.ytimg.com/vi/td4Q4PXwbtE/mqdefault.jpg" alt="sidebar icon"><br>
-            <a href="file:///C:/portapps/vscode-portable/224132191-WebApp/form.html">Register here</a>
+            <img src="https://i.ytimg.com/vi/td4Q4PXwbtE/mqdefault.jpg" alt="sidebar icon" width="200" height="112"><br>
+            <a href="form.html">Register here</a>
         </aside>
         <footer>
             <a href="https://www.uc-bcf.edu.ph/" target="_blank"><h4>Home</h4></a>
