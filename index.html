@@ -9,25 +9,35 @@
             font-family: 'Courier New';
             }
         h1, h2, h3, h4, p, label, th, td{
-                color: white;
-                text-align: center;
-                list-style-position: inside;
+            color: white;
+            text-align: center;
+            list-style-position: inside;
+            }
+        a:link, a:visited, a:hover, a:active{
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
             }
         header {
             display: flex;
             background-color: #2f2c36;
             align-items: center;
         }
+        .main{
+            display: flex;
+        }
         .una{
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        article{
             width: 60%;
-            height: 350px;
             
         }
+        article{
+            height: 400px;
+        }
+
         .portrait{
             width: 40%;
             display: flex;
@@ -44,16 +54,21 @@
     <header>
         <h1>PICK A CARD ANY CARD</h1><br>
     </header>
-    <div class="una">
-        <article>
-            <h1>Hello there</h1><br>
-            <h2>mmm yes</h2>
-        </article>
+    <div class="main">
+        <div class="una">
+            <article>
+                <h1>Hello there</h1><br>
+                <h2>mmm yes</h2>
+            </article>
+            <nav>
+                <h2><a href="htmlexercise/pgs/htmlexercise.html" target="_blank"><img src="htmlexercise/mdi/button.png" alt="home" width="150px" height="70px"></a></h2>
+            </nav>
+        </div>
         <div class="portrait">
             <p>woah</p>
-            <img src="../224132191-WebApp/htmlexercise/mdi/goose.jpg" alt="test" width="300px">
+            <img src="htmlexercise/mdi/goose.jpg" alt="test" width="500px">
         </div>
     </div>
-    <a href="htmlexercise/pgs/htmlexercise.html">Home</a>
+    
 </body>
 </html>
