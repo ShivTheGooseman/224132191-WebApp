@@ -1,0 +1,51 @@
+html{
+    background-image: url(htmlexercise/mdi/indexBG.jpg);
+    background-size: cover;
+    font-family: 'Courier New';
+    }
+h1, h2, h3, h4, p, label, th, td{
+    color: white;
+    text-align: center;
+    list-style-position: inside;
+    }
+a:link, a:visited, a:hover, a:active{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    }   
+header {
+    display: flex;
+    background-color: #2f2c36;
+    align-items: center;
+}
+.main{
+    display: flex;
+}
+.una{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    
+}
+article{
+    height: 400px;
+}
+@keyframes test{
+    from {background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));}
+    to {background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));}
+}
+nav{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
+    animation-name: test;
+    animation-duration: 4s;
+    width: 100%;
+}
+.portrait{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
