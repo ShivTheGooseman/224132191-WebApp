@@ -32,8 +32,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    
+    width: 60%;    
 }
 article{
     height: 400px;
@@ -48,13 +47,37 @@ nav{
     animation: test 5s forwards;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.navImg1, .navImg2 , .navImg3 , .navImg4 , .navImg5 , .navImg6 , .navImg7 , .navImg8{
+    margin: 3px;
+    position: relative;
+    text-align: center;
+    color: white;
+} 
+.navText1 , .navText2 , .navText3 , .navText4 , .navText5 , .navText6 , .navText7 , .navText8{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .portrait{
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+}
+.aboutme{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutcontent{
+    width: 87%;
 }
