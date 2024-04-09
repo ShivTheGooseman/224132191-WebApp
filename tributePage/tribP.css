@@ -59,17 +59,25 @@ html {
     height: auto;
     margin: 0 auto;
   }
-  
+  .top{
+    display: flex;
+    flex-direction: row;
+  }
+  .description{
+    width: 50%;
+  }
   #img-div {
     background: white;
     padding: 10px;
     margin: 0;
+    width: 50%;
   }
-  
+  #image {
+    max-width: 100%;
+  }
   #img-caption {
     margin: 15px 0 5px 0;
   }
-  
   @media (max-width: 460px) {
     #img-caption {
       font-size: 1.4rem;
@@ -80,16 +88,35 @@ html {
     margin: 50px 0;
     text-align: center;
   }
-  
-  ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
+  .tributeInfo{
+    
   }
-  
+  ul {
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    line-height: 1.6;
+    list-style-position: inside;
+  }
+  .cos1 , .cos3 , .cos5{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .cos2, .cos4, .cos6{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .cosImg1 , .cosImg2 , .cosImg3 , .cosImg4 , .cosImg5 , .cosImg6{
+    width: 40%;
+  }
+  .cosLi1 , .cosLi2 , .cosLi3 , .cosLi4 , .cosLi5 , .cosLi6{
+    width: 60%;  
+  }
   li {
     margin: 16px 0;
+    
+    align-content: center;
   }
   
   blockquote {
