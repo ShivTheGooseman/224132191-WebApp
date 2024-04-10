@@ -98,7 +98,7 @@ html {
     line-height: 1.6;
     list-style-position: inside;
   }
-  .cos1 , .cos3 , .cos5{
+  .cos1 , .cos3 , .cos5, .cos7{
     display: flex;
     flex-direction: row;
     
@@ -107,10 +107,10 @@ html {
     display: flex;
     flex-direction: row-reverse;
   }
-  .cosImg1 , .cosImg2 , .cosImg3 , .cosImg4 , .cosImg5 , .cosImg6{
+  .cosImg1 , .cosImg2 , .cosImg3 , .cosImg4 , .cosImg5 , .cosImg6, .cosImg7{
     width: 40%;
   }
-  .cosLi1 , .cosLi2 , .cosLi3 , .cosLi4 , .cosLi5 , .cosLi6{
+  .cosLi1 , .cosLi2 , .cosLi3 , .cosLi4 , .cosLi5 , .cosLi6, .cosLi7{
     width: 60%;  
   }
   li {

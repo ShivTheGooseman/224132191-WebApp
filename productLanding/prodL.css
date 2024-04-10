@@ -6,10 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 body {
-  background-color: #eee;
+  background-color: #252329;
   font-family: 'Lato', sans-serif;
 }
 
@@ -22,7 +23,7 @@ li {
 }
 
 a {
-  color: #000;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -54,11 +55,12 @@ header {
   position: fixed;
   top: 0;
   min-height: 75px;
+  width: 100%;
   padding: 0px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  background-color: #2f2c36;
 }
 
 @media (max-width: 600px) {
@@ -137,12 +139,15 @@ nav > ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
+  height: 700px;
   margin-top: 50px;
 }
 
 #hero > h2 {
-  margin-bottom: 20px;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 100px;
   word-wrap: break-word;
 }
 
@@ -150,6 +155,7 @@ nav > ul {
   max-width: 275px;
   width: 100%;
   padding: 5px;
+  color: #000;
 }
 
 #hero input[type='submit'] {
@@ -172,56 +178,49 @@ nav > ul {
   }
 }
 
-#features {
+#our_coffee {
   margin-top: 30px;
-}
-
-#features .icon {
-  display: flex;
   align-items: center;
   justify-content: center;
-  height: 125px;
-  width: 20vw;
-  color: darkorange;
 }
-
-@media (max-width: 550px) {
-  #features .icon {
-    display: none;
-  }
-}
-
-#features .desc {
+.feat1, .feat2, .feat3{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 125px;
-  width: 80vw;
-  padding: 5px;
+  align-items: center;
+}
+.icon1{
+  background-image: url(icon1.png);
+  background-size: cover;
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+}
+.icon2{
+  background-image: url(icon2.png);
+  background-size: cover;
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+}
+.icon3{
+  background-image: url(icon3.png);
+  background-size: cover;
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+}
+.desc{
+  width: 50%;
+  margin-left: 100px;
+  line-height: 30px;  
 }
 
-@media (max-width: 550px) {
-  #features .desc {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    height: 150px;
-  }
-}
-
-@media (max-width: 650px) {
-  #features {
-    margin-top: 0;
-  }
-}
-
-#how-it-works {
+#brewing-guide {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
-#how-it-works > iframe {
+#brewing-guide > iframe {
   max-width: 560px;
   width: 100%;
 }
@@ -245,12 +244,24 @@ nav > ul {
 }
 
 .product > .level {
-  background-color: #ddd;
-  color: black;
+  background-color: #19181c;
+  color: white;
   padding: 15px 0;
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+}
+#tublay{
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(prod1.png);
+  background-size: cover;
+}
+#kibungan{
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(prod2.png);
+  background-size: cover;
+}
+#laTrinidad{
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(prod3.png);
+  background-size: cover;
 }
 
 .product > h2 {
@@ -291,7 +302,7 @@ nav > ul {
 
 footer {
   margin-top: 30px;
-  background-color: #ddd;
+  background-color: #2f2c36;
   padding: 20px;
 }
 
