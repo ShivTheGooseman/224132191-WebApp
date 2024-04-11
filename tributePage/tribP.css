@@ -1,7 +1,4 @@
 html {
-    /* Setting a base font size of 10px give us easier rem calculations
-         Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-       */
     font-size: 10px;
   }
   
@@ -63,8 +60,25 @@ html {
     display: flex;
     flex-direction: row;
   }
-  .description{
+  .top-left{
+    display: flex;
+    flex-direction: column;
     width: 50%;
+  }
+  .description{
+    height: 70%;
+  }
+  .us{
+    display: flex;
+    height: 40%;
+  }
+  .us-desc{
+    justify-content: center;
+  }
+  #us-img{
+    background: white;
+    margin: 0;
+    width: 30%;
   }
   #img-div {
     background: white;
@@ -111,6 +125,7 @@ html {
     width: 40%;
   }
   .cosLi1 , .cosLi2 , .cosLi3 , .cosLi4 , .cosLi5 , .cosLi6, .cosLi7{
+    padding: 30px;
     width: 60%;  
   }
   li {
