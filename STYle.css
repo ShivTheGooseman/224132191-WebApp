@@ -28,6 +28,7 @@ header {
     display: flex;
 }
 .una{
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +36,10 @@ header {
     width: 60%;    
 }
 article{
-    height: 400px;
+    margin-bottom: 50px;
+}
+.selfDesc{
+    margin: 50px;
 }
 @keyframes test{
     0% {opacity: 0;}
@@ -64,9 +68,6 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
   }
-img{
-    max-width: 100%;
-}
 #img-div{
     width: 40%;
     display: flex;
@@ -79,20 +80,29 @@ img{
     margin: 15px 0 5px 0;
     color: white;
 }
-.tributeInfo{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
 #headline{
     margin: 50px;
     text-align: center;
 }
-.list{
-    width: 50%;
+.projects{
+    display: flex;
+    flex-direction: column;
 }
-li{
-    color: white;
+.projDesc{
+    width: 80%;
+    align-items: center;
+}
+.projIcon{
+    width: 20%;
+}
+.projIcon > img{
+    width: 100px;
+}
+.htmlexer, .finalProj{
+    display: flex;
+    flex-direction: row;
+}
+.cssexer, .typingexer{
+    display: flex;
+    flex-direction: row-reverse ;
 }
