@@ -35,9 +35,9 @@
  *
  * ------------------------------------------------------------------- 
  */
- @import url("fonts.css");
- @import url("font-awesome/css/font-awesome.min.css");
- @import url("micons/micons.css");
+ @import url("css/fonts.css");
+ @import url("css/font-awesome.min.css");
+ @import url("css/micons.css");
  
  
  /** 
@@ -1118,9 +1118,9 @@
      font: 0/0 a;
      text-shadow: none;
      color: transparent;
-     width: 184px; /* Doubled width to enlarge */
+     width: 84px; /* Doubled width to enlarge */
      height: 30px; /* Doubled height to enlarge */
-     background: url("../images/intro-bg1.jpg") no-repeat center;
+     background: url("/htmlexercise/mdi/bedoLogo.png") no-repeat center;
      background-size: contain; /* Ensure the background image is contained within the dimensions */
  }
  
@@ -1311,7 +1311,7 @@
      left: 0;
      width: 100%;
      height: 100%;
-     background: url(../images/background.jpg) no-repeat center;
+     background: url("/newindex/img/background.jpg") no-repeat center;
      background-size: cover;
      background-attachment: fixed;
      filter: blur(2px); /* Adjust blur intensity as needed */
@@ -1679,7 +1679,6 @@
      height: 4.8rem;
      width: 4.8rem;
      line-height: 4.8rem;
-     background: #313131;
      border-radius: 50%;
      text-align: center;
      color: #FFFFFF;
@@ -1693,7 +1692,7 @@
      left: .05rem;
      top: .2rem;
  }
- 
+
  #resume .timeline-header {
      float: left;
      width: 35%;
@@ -2065,6 +2064,8 @@
      padding-top: 10.2rem;
      padding-bottom: 9rem;
      text-align: center;
+     background-image: url(/newindex/img/ctaBG.jpg); 
+     background-size: cover;
  }
  #cta p.lead {
      color: #6e6e6e;
@@ -2086,6 +2087,7 @@
   * section ads - (_layout.scss)
   * ------------------------------------------------------------------- 
   */
+
  .section-ads h2 {
      position: relative;
      padding-bottom: 2.1rem;
