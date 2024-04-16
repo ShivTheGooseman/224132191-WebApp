@@ -68,12 +68,18 @@ html {
   .description{
     height: 70%;
   }
+  .description p{
+    padding: 50px;
+    font-size: large;
+  }
   .us{
     display: flex;
-    height: 40%;
+    height: 100px;
+    width: 100%;
   }
   .us-desc{
     justify-content: center;
+    padding-left: 30px;
   }
   #us-img{
     background: white;

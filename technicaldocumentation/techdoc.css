@@ -85,6 +85,9 @@ code {
     margin: 10px;
     border-radius: 5px;
 }
+#wslTable th, td{
+    border: 1px solid;
+}
 
 @media only screen and (max-width: 815px) {
 

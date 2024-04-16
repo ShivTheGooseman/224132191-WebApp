@@ -19,20 +19,11 @@
             <li><a class="nav-link" href="#!DOCTYPE_HTML">!DOCTYPE HTML</a></li>
             <li><a class="nav-link" href="#CSS">CSS</a></li>
             <li>
-                <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+                <a class="nav-link" href="#MORE_Git">MORE Git</a>
             </li>
-            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#WSL">WSL</a></li>
             <li>
-                <a class="nav-link" href="#Global_variables">Global variables</a>
-            </li>
-            <li><a class="nav-link" href="#Constants">Constants</a></li>
-            <li><a class="nav-link" href="#Data_types">Data types</a></li>
-            <li>
-                <a class="nav-link" href="#if...else_statement">if...else statement</a>
-            </li>
-            <li><a class="nav-link" href="#while_statement">while statement</a></li>
-            <li>
-                <a class="nav-link" href="#Function_declarations">Function declarations</a>
+                <a class="nav-link" href="#Flexbox">Flexbox</a>
             </li>
             <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
@@ -114,275 +105,175 @@
                 </p>
             </article>
         </section>
-        <section class="main-section" id="Variables">
-            <header>Variables</header>
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
             <p>
-                You use variables as symbolic names for values in your application.
-                The names of variables, called identifiers, conform to certain rules.
-            </p>
-            <p>
-                A JavaScript identifier must start with a letter, underscore (_), or
-                dollar sign ($); subsequent characters can also be digits (0-9).
-                Because JavaScript is case sensitive, letters include the characters
-                "A" through "Z" (uppercase) and the characters "a" through "z"
-                (lowercase).
-            </p>
-            <p>
-                You can use ISO 8859-1 or Unicode letters such as å and ü in
-                identifiers. You can also use the Unicode escape sequences as
-                characters in identifiers. Some examples of legal names are
-                Number_hits, temp99, and _name.
-            </p>
-        </section>
-        <section class="main-section" id="Declaring_variables">
-            <header>Declaring variables</header>
-            <article>
-                You can declare a variable in three ways:
-                <p>
-                    the fundamental technologies used to build websites: HTML5, CSS, and JavaScript. HTML5 provides the structure and content of a web page, acting like the skeleton. CSS styles the presentation of that content, like the muscles and skin. Finally, JavaScript adds interactivity and dynamism, bringing the website to life. By working together, these three technologies allow for the creation of modern and engaging web experiences. The lesson also introduced frameworks and libraries that can be used on top of these core technologies to simplify and enhance web development.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Variable_scope">
-            <header>Variable scope</header>
-            <article>
-                <p>
-                    When you declare a variable outside of any function, it is called a
-                    global variable, because it is available to any other code in the
-                    current document. When you declare a variable within a function, it
-                    is called a local variable, because it is available only within that
-                    function.
-                </p>
-
-                <p>
-                    JavaScript before ECMAScript 2015 does not have block statement
-                    scope; rather, a variable declared within a block is local to the
-                    function (or global scope) that the block resides within. For
-                    example the following code will log 5, because the scope of x is the
-                    function (or global context) within which x is declared, not the
-                    block, which in this case is an if statement.
-                </p>
-                <code>if (true) { var x = 5; } console.log(x); // 5</code>
-                <p>
-                    This behavior changes, when using the let declaration introduced in
-                    ECMAScript 2015.
-                </p>
-
-                <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code>
-            </article>
-        </section>
-        <section class="main-section" id="Global_variables">
-            <header>Global variables</header>
-            <article>
-                <p>
-                    Global variables are in fact properties of the global object. In web
-                    pages the global object is window, so you can set and access global
-                    variables using the window.variable syntax.
-                </p>
-
-                <p>
-                    Consequently, you can access global variables declared in one window
-                    or frame from another window or frame by specifying the window or
-                    frame name. For example, if a variable called phoneNumber is
-                    declared in a document, you can refer to this variable from an
-                    iframe as parent.phoneNumber.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Constants">
-            <header>Constants</header>
-            <article>
-                <p>
-                    You can create a read-only, named constant with the const keyword.
-                    The syntax of a constant identifier is the same as for a variable
-                    identifier: it must start with a letter, underscore or dollar sign
-                    and can contain alphabetic, numeric, or underscore characters.
-                </p>
-
-                <code>const PI = 3.14;</code>
-                <p>
-                    A constant cannot change value through assignment or be re-declared
-                    while the script is running. It has to be initialized to a value.
-                </p>
-
-                <p>
-                    The scope rules for constants are the same as those for let block
-                    scope variables. If the const keyword is omitted, the identifier is
-                    assumed to represent a variable.
-                </p>
-
-                <p>
-                    You cannot declare a constant with the same name as a function or
-                    variable in the same scope. For example:
-                </p>
-
-                <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code>
-                However, object attributes are not protected, so the following
-                statement is executed without problems.
-                <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-            "otherValue";</code>
-            </article>
-        </section>
-        <section class="main-section" id="Data_types">
-            <header>Data types</header>
-            <article>
-                <p>The latest ECMAScript standard defines seven data types:</p>
+                Ready to start adding some <b>pizzazz</b> to your HTML? You can use CSS with either:
                 <ul>
-                    <li>
-                        <p>Six data types that are primitives:</p>
-                        <ul>
-                            <li>Boolean. true and false.</li>
-                            <li>
-                                null. A special keyword denoting a null value. Because
-                                JavaScript is case-sensitive, null is not the same as Null,
-                                NULL, or any other variant.
-                            </li>
-                            <li>
-                                undefined. A top-level property whose value is undefined.
-                            </li>
-                            <li>Number. 42 or 3.14159.</li>
-                            <li>String. "Howdy"</li>
-                            <li>
-                                Symbol (new in ECMAScript 2015). A data type whose instances
-                                are unique and immutable.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>and Object</li>
+                    <li>Inline style sheet</li>
+                    <li>Internal style sheet</li>
+                    <li>External style sheet</li>
                 </ul>
-                Although these data types are a relatively small amount, they enable
-                you to perform useful functions with your applications. Objects and
-                functions are the other fundamental elements in the language. You can
-                think of objects as named containers for values, and functions as
-                procedures that your application can perform.
+            </p>
+            <h3>Using External Style Sheets</h3>
+            <ul>
+                <li>External style sheets let you specify rules for multiple Web pages</li>
+                <li>These are text documents that contain style rules</li>
+                <li>These are text documents that contain style rules</li>
+            </ul>
+            <p>You can link your css file to your html by placing a link element inside your head</p>
+            <code>&lt;link href=“styles.css” rel=“stylesheet” type=“text/css” /&gt;</code>
+        </section>
+        <section class="main-section" id="MORE_Git">
+            <header>MORE_Git</header>
+            <ol>
+                <li><h3>Add & Commit</h3></li>
+                <p>You may have done both of these commands already, but it can actually be combined into one line. Try this instead, and it will add the file changes and create the commit using the message.</p>
+                <code>$ git commit -am "new project"</code>
+                <li><h3>Amend</h3></li>
+                <p>You can rename your current commit message using the `--amend` flag and write the new message. This will help you with accidental messages.</p>
+                <code>$ git commit --amend -m "Love"</code>
+                <p>You can include additional changes to the current commit before pushing it to the remote repository. To do so, you need to add the file changes and then commit using the `--amend` flag. To retain the previous commit message, simply use the `--no-edit` flag.</p>
+                <code>$ git add . 
+                    $ git commit --amend --no-edit</code>
+            </ol>
+        </section>
+        <section class="main-section" id="WSL">
+            <header>WSL</header>
+            <article>
+                <p>Linux is still the most capable operating system when it comes to professional and enterprise applications, so WSL was created to bring the features of Linux to Windows.</p>
+                <table id="wslTable">
+                    <caption>List of Commands</caption>
+                
+                    <thead>
+                      <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr>
+                        <td>wsl --install</td>
+                        <td>installs Linux on your computer</td>
+                      </tr>
+                      <tr>
+                        <td>wsl</td>
+                        <td>opens Linux in your terminal</td>
+                      </tr>
+                      <tr>
+                        <td>logout or exit</td>
+                        <td>returns to command prompt in windows</td>
+                      </tr>
+                      <tr>
+                        <td>clear</td>
+                        <td>clears the terminal screen</td>
+                      </tr>
+                
+                      <tr>
+                        <th colspan="2">Apache Commands</th> </tr>
+                      <tr>
+                        <td>sudo apt update</td>
+                        <td>updates Linux before installation of Apache</td>
+                      </tr>
+                      <tr>
+                        <td>sudo apt upgrade</td>
+                        <td>upgrades Linux</td>
+                      </tr>
+                      <tr>
+                        <td>sudo apt-get install apache2</td>
+                        <td>installs Apache server</td>
+                      </tr>
+                      <tr>
+                        <td>sudo service apache2 start</td>
+                        <td>starts Apache Server</td>
+                      </tr>
+                      <tr>
+                        <td>sudo service apache2 stop</td>
+                        <td>stops Apache Server</td>
+                      </tr>
+                
+                      <tr>
+                        <th colspan="2">Apache Setup</th>
+                      </tr>
+                      <tr>
+                        <td>sudo nano</td>
+                        <td>open text editor</td>
+                      </tr>
+                      <tr>
+                        <td>sudo chown -R username path/to/working/directory</td>
+                        <td>make folder writable</td>
+                      </tr>
+                      <tr>
+                        <td>sudo nano /etc/apache2/sites-available/000-default.conf</td>
+                        <td>enable site<br>look for document root and change it to your desired folder to run in localhost</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </article>
         </section>
-        <section class="main-section" id="if...else_statement">
-            <header>if...else statement</header>
+        <section class="main-section" id="Flexbox">
+            <header>Flexbox</header>
             <article>
-                Use the if statement to execute a statement if a logical condition is
-                true. Use the optional else clause to execute a statement if the
-                condition is false. An if statement looks as follows:
-
-                <code>if (condition) { statement_1; } else { statement_2; }</code>
-                condition can be any expression that evaluates to true or false. See
-                Boolean for an explanation of what evaluates to true and false. If
-                condition evaluates to true, statement_1 is executed; otherwise,
-                statement_2 is executed. statement_1 and statement_2 can be any
-                statement, including further nested if statements.
                 <p>
-                    You may also compound the statements using else if to have multiple
-                    conditions tested in sequence, as follows:
+                    To move things around the screen and around itself, you would need div and display: flex;.
                 </p>
-                <code>if (condition_1) { statement_1; } else if (condition_2) {
-            statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
-          </code>
-                In the case of multiple conditions only the first logical condition
-                which evaluates to true will be executed. To execute multiple
-                statements, group them within a block statement ({ ... }) . In
-                general, it's good practice to always use block statements, especially
-                when nesting if statements:
-
-                <code>if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code>
-                It is advisable to not use simple assignments in a conditional
-                expression, because the assignment can be confused with equality when
-                glancing over the code. For example, do not use the following code:
-                <code>if (x = y) { /* statements here */ }</code> If you need to use
-                an assignment in a conditional expression, a common practice is to put
-                additional parentheses around the assignment. For example:
-
-                <code>if ((x = y)) { /* statements here */ }</code>
-            </article>
-        </section>
-        <section class="main-section" id="while_statement">
-            <header>while statement</header>
-            <article>
-                A while statement executes its statements as long as a specified
-                condition evaluates to true. A while statement looks as follows:
-
-                <code>while (condition) statement</code> If the condition becomes
-                false, statement within the loop stops executing and control passes to
-                the statement following the loop.
-
+                <h3>Properties for the Parent(flex container)<h3>
+                <h3>display</h3>
                 <p>
-                    The condition test occurs before statement in the loop is executed.
-                    If the condition returns true, statement is executed and the
-                    condition is tested again. If the condition returns false, execution
-                    stops and control is passed to the statement following while.
+                    This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
                 </p>
-
+                <code>.container {
+                    display: flex; /* or inline-flex */
+                  }</code>
+                <h3>flex-direction</h3>
                 <p>
-                    To execute multiple statements, use a block statement ({ ... }) to
-                    group those statements.
+                    This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
                 </p>
-
-                Example:
-
+                <code>.container {
+                    flex-direction: row | row-reverse | column | column-reverse;
+                  }</code>
+                  <ol>
+                    <li>row (default): left to right in ltr; right to left in rtl</li>
+                    <li>row-reverse: right to left in ltr; left to right in rtl</li>
+                    <li>column: same as row but top to bottom</li>
+                    <li>column-reverse: same as row-reverse but bottom to top</li>
+                  </ol>
+                <h3>flex-wrap</h3>
                 <p>
-                    The following while loop iterates as long as n is less than three:
+                    By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
                 </p>
-
-                <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+                <code>.container {
+                    flex-wrap: nowrap | wrap | wrap-reverse;
+                  }</code>
+                <h3>flex-flow</h3>
                 <p>
-                    With each iteration, the loop increments n and adds that value to x.
-                    Therefore, x and n take on the following values:
+                    This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
                 </p>
-
-                <ul>
-                    <li>After the first pass: n = 1 and x = 1</li>
-                    <li>After the second pass: n = 2 and x = 3</li>
-                    <li>After the third pass: n = 3 and x = 6</li>
-                </ul>
+                <code>.container {
+                    flex-flow: column wrap;
+                  }</code>
+                <h3>justify-content</h3>
                 <p>
-                    After completing the third pass, the condition n &lt; 3 is no longer
-                    true, so the loop terminates.
+                    This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
                 </p>
-            </article>
-        </section>
-        <section class="main-section" id="Function_declarations">
-            <header>Function declarations</header>
-            <article>
-                A function definition (also called a function declaration, or function
-                statement) consists of the function keyword, followed by:
-
-                <ul>
-                    <li>The name of the function.</li>
-                    <li>
-                        A list of arguments to the function, enclosed in parentheses and
-                        separated by commas.
-                    </li>
-                    <li>
-                        The JavaScript statements that define the function, enclosed in
-                        curly brackets, { }.
-                    </li>
-                </ul>
+                <code>.container {
+                    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+                  }</code>
+                <h3>align-items</h3>
                 <p>
-                    For example, the following code defines a simple function named
-                    square:
+                    This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
                 </p>
-
-                <code>function square(number) { return number * number; }</code>
+                <code>.container {
+                    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+                  }</code>
+                <h3>align-content</h3>
                 <p>
-                    The function square takes one argument, called number. The function
-                    consists of one statement that says to return the argument of the
-                    function (that is, number) multiplied by itself. The return
-                    statement specifies the value returned by the function.
+                    This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. Note: This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse. A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
                 </p>
-                <code>return number * number;</code>
-                <p>
-                    Primitive parameters (such as a number) are passed to functions by
-                    value; the value is passed to the function, but if the function
-                    changes the value of the parameter, this change is not reflected
-                    globally or in the calling function.
-                </p>
+                <code>.container {
+                    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                  }</code>
             </article>
         </section>
         <section class="main-section" id="Reference">
@@ -391,7 +282,7 @@
                 <ul>
                     <li>
                         All the documentation in this page is taken from
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+                        <a href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db" target="_blank">CC14</a>
                     </li>
                 </ul>
             </article>
